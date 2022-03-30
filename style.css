@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Righteous&display=swap');
+
+*{
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 22px;
+}
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #41002d, rgba(25, 25, 223, 0.979 )) ;
+    background-attachment: fixed;
+}
+input{
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=text]{
+    width: calc(100% - 8px);
+    height: 40px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+}
+
+input[type=button]{
+    width: 70px;
+    height: 50px;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+div#calculadora{
+    box-shadow: 0 0 15px black;
+}
+
+div#calculadora div{
+    display: flex;
+}
+div#visor input, div#calculadora{
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+}
+
+div#calculadora div input:nth-child(4){
+    filter: brightness(65%);
+}
+div#calculadora div input:nth-child(4):hover{
+    filter: brightness(35%);
+}
+
+div#quarta input:nth-child(1) {
+    background: #df2a2a;    
+}
+
+div#quarta input:nth-child(1), div#calculadora{
+    border-bottom-left-radius: 20px; 
+}
+
+div#quarta input:nth-child(3){
+    background-color: #587ae9; 
+}
+
+div#quarta input:nth-child(4), div#calculadora{
+    border-bottom-right-radius: 20px; 
+}
+
+input[type=button]:hover{
+    filter: brightness(50%);
+}
+
+input[type=button]:active{
+    transform: scale(0.8);
+}
